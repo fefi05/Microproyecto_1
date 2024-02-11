@@ -323,12 +323,18 @@ button, a{cursor: pointer; text-decoration: none;}
     display: flex;
     justify-content: center;
     align-items: start;
-    font-size: x-large;
+    font-size: x-small;
     color: rgba(76, 37, 101, 0.986);
     font-family: 'Courier New', Courier, monospace;
     margin: 0%;
+    
 }
 
 #mostrarResultado {display: flex; justify-content: center;}
 #mostrarResultado .grid{width: 200px; text-align: center; background: white;}
 #mostrarbotonReiniciar {display: flex; justify-content: center; margin:20px}
+
+@media (max-width: 760px) {
+    #partidaTerminada #BINGO{font-size: x-small; margin-bottom: 20px;}
+    #mostrarbotonReiniciar button {font-size: x-small;}
+}
