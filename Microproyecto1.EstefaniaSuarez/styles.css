@@ -1,0 +1,199 @@
+
+/*
+button {
+    background-color: salmon;
+    border-radius: 20%;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
+*/
+
+body {
+    background-color: rgb(255, 151, 139);
+    margin:0%
+  }
+
+
+
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 650px; 
+}
+
+.contenedor2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 650px;
+}
+
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#tamano {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1280px;
+}
+
+
+#jugadores {
+    display: flex;
+    justify-content: center;
+}
+
+
+.nombre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+
+
+#BINGO{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 650%;
+    color: rgba(76, 37, 101, 0.986);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0%;
+}
+
+
+.boton {
+    padding: 20px 50px;
+    font-size: 40px;
+    border-radius: 40%;
+    font-family: fantasy;
+    background-color: rgba(123, 63, 179, 0.799);
+    color: aliceblue;
+    border-width: 5px;
+    border-color: rgb(243, 245, 245);
+
+}
+
+
+#victorias {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+
+
+#tabla1 {
+    border: 5px solid blanchedalmond;
+    border-collapse: collapse;
+
+}
+
+
+#tabla1 th, #tabla1 td {
+    border: 4px solid blanchedalmond;
+    padding: 8px;
+  }
+
+
+.j1 {
+    color: rgb(195, 49, 49);
+}
+
+#j1i {
+    background-color: rgb(195, 49, 49);
+    border-radius: 20%;
+    border: 2px solid blanchedalmond;
+}
+
+
+.j2 {
+    color: rgb(78, 200, 78);
+}
+
+#j2i {
+    background-color: rgb(78, 200, 78);
+    border-radius: 20%;
+    border: 2px solid blanchedalmond;
+}
+
+.j3 {
+    color: rgb(98, 98, 235);
+}
+
+#j3i {
+    background-color: rgb(98, 98, 235);
+    border-radius: 20%;
+    border: 2px solid blanchedalmond;
+}
+
+.j4 {
+    color: rgb(248, 248, 100);
+}
+
+
+#j4i {
+    background-color: rgb(248, 248, 100);
+    border-radius: 20%;
+    border: 2px solid blanchedalmond;
+}
+
+.tituloj {
+    color: aliceblue;
+}
+
+.tam_carton {
+    padding: px 50px;
+    font-size: 25px;
+    border-radius: 40%;
+    font-family: fantasy;
+    background-color: rgba(123, 63, 179, 0.799);
+    color: aliceblue;
+    border-width: 5px;
+    border-color: rgb(243, 245, 245);
+}
+
+
+#boton1 {
+    padding: 20px 50px;
+    font-size: 40px;
+    border-radius: 40%;
+    font-family: fantasy;
+    background-color: aliceblue;
+    color: rgba(123, 63, 179, 0.799);
+    border-width: 5px;
+    border-color: rgba(123, 63, 179, 0.799);
+    margin: 0%;
+}
+
+
+
+#ruleta {width: 70px;
+    height: 70px;
+    border-radius: 70%;
+    color: aliceblue;
+    background-color: rgba(123, 63, 179, 0.799);
+    border-width: 5px;
+    border-color: aliceblue;
+}
+
+.carton {
+    display: grid;
+    place-items: center;
+    gap: 12px;
+    font-size: x-large;
+    background-color: white;
+    grid-template-columns: repeat(3, minmax(auto, 8px));
+    grid-template-rows: repeat(3, minmax(auto, 8px));
+} 
