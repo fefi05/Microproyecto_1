@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <section id="contenedor">
+      <div>
+        <h1 class="tituloj">Ingrese el nombre de cada jugador:</h1>
+        <div id="jugadores">
+          <div class="nombre">
+            <h2 class="j1">Jugador 1:</h2>
+            <h2 class="j2">Jugador 2:</h2>
+            <h2 class="j3">Jugador 3:</h2>
+            <h2 class="j4">Jugador 4:</h2>
+          </div>
+
+          <div class="nombre">
+            <input type="text" id="j1i" />
+            <input type="text" id="j2i" />
+            <input type="text" id="j3i" />
+            <input type="text" id="j4i" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <h2 class="tituloj">Elija el tamaño del cartón:</h2>
+        </div>
+        <div id="tamano">
+          <button class="tam_carton" onclick="getnum(3)">3X3</button>
+          <button class="tam_carton" onclick="getnum(4)">4X4</button>
+          <button class="tam_carton" onclick="getnum(5)">5X5</button>
+        </div>
+      </div>
+      <div>
+        <button id="boton1" onclick="habilitarboton();">Iniciar Partida</button>
+      </div>
+    </section>
+    <section id="partida" class="d-none">
+      <div id="jugadoresContainer" class="container"></div>
+      <div class="sectionListadoNumeros">
+        <p id="numeros_bingo">Número:</p>
+        <div id="listadoNumeros"></div>
+      </div>
+      <div id="carton"></div>
+      <div class="mostrarBoton">
+        <boton class="boton botonSiguiente" onclick="pasarSiguienteJugador()"
+          >Siguiente Jugador</boton
+        >
+      </div>
+    </section>
+  </body>
+</html>

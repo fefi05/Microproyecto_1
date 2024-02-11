@@ -1,0 +1,309 @@
+
+/*
+button {
+    background-color: salmon;
+    border-radius: 20%;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
+*/
+
+body {
+    background-color: rgb(221, 198, 195);
+    margin:0%
+  }
+
+
+
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 650px; 
+}
+
+.contenedor2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 650px;
+}
+
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#tamano {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1280px;
+}
+
+
+#jugadores {
+    display: flex;
+    justify-content: center;
+}
+
+
+.nombre {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+
+
+#BINGO{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 650%;
+    color: rgba(76, 37, 101, 0.986);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0%;
+}
+
+
+.boton {
+    padding: 20px 50px;
+    font-size: 40px;
+    border-radius: 40%;
+    font-family: fantasy;
+    background-color: rgba(123, 63, 179, 0.799);
+    color: aliceblue;
+    border-width: 5px;
+    border-color: rgb(243, 245, 245);
+
+}
+
+
+#victorias {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+
+
+#tabla1 {
+    border: 5px solid blanchedalmond;
+    border-collapse: collapse;
+
+}
+
+
+#tabla1 th, #tabla1 td {
+    border: 4px solid blanchedalmond;
+    padding: 8px;
+  }
+
+
+.j1 {
+    color: rgb(195, 49, 49);
+}
+
+#j1i {
+    background-color: rgb(195, 49, 49);
+    border-radius: 20%;
+    border: 2px solid blanchedalmond;
+}
+
+
+.j2 {
+    color: rgb(78, 200, 78);
+}
+
+#j2i {
+    background-color: rgb(78, 200, 78);
+    border-radius: 20%;
+    border: 2px solid blanchedalmond;
+}
+
+.j3 {
+    color: rgb(98, 98, 235);
+}
+
+#j3i {
+    background-color: rgb(98, 98, 235);
+    border-radius: 20%;
+    border: 2px solid blanchedalmond;
+}
+
+.j4 {
+    color: rgb(248, 248, 100);
+}
+
+
+#j4i {
+    background-color: rgb(248, 248, 100);
+    border-radius: 20%;
+    border: 2px solid blanchedalmond;
+}
+
+.tituloj, .texto {
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+}
+
+.tam_carton {
+    padding: px 50px;
+    font-size: 25px;
+    border-radius: 40%;
+    font-family: fantasy;
+    background-color: rgba(123, 63, 179, 0.799);
+    color: aliceblue;
+    border-width: 5px;
+    border-color: rgb(243, 245, 245);
+}
+
+
+#boton1 {
+    padding: 20px 50px;
+    font-size: 40px;
+    border-radius: 40%;
+    font-family: fantasy;
+    background-color: aliceblue;
+    color: rgba(123, 63, 179, 0.799);
+    border-width: 5px;
+    border-color: rgba(123, 63, 179, 0.799);
+    margin: 0%;
+}
+
+
+
+#ruleta {width: 70px;
+    height: 70px;
+    border-radius: 70%;
+    color: aliceblue;
+    background-color: rgba(123, 63, 179, 0.799);
+    border-width: 5px;
+    border-color: aliceblue;
+}
+
+#carton{display: flex; justify-content: center; margin-bottom: 50px;}
+#carton #BINGO{font-size: xxx-large !important;}
+
+#carton .grid {
+    display: grid;
+    padding: 10px;
+    width: 300px;
+    font-size: x-large; background-color: white;
+}
+#carton .grid-row-bingo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+  
+#carton .grid-row-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#carton .grid-row-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#carton .grid-row-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+  
+#carton .grid-cell {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+#jugadoresContainer .jugador{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+  
+#jugadoresContainer .nombre {
+    flex: 1;
+    font-size: 150%;
+    color: rgba(123, 63, 179, 0.799);
+}
+
+#jugadoresContainer .puntuacion {
+    flex: 1;
+    font-size: 250%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(123, 63, 179, 0.799);
+}
+
+#jugadoresContainer .tiempo {
+    flex: 1;
+    font-size: 250%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(123, 63, 179, 0.799);
+}
+
+#jugadoresContainer .turno {
+    flex: 1;
+    font-size: 250%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(123, 63, 179, 0.799);
+}
+  
+/* Estilos para dispositivos móviles */
+@media (max-width: 600px) {
+    #jugadoresContainer .jugador {
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #jugadoresContainer .boton {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+}
+
+#numeros_bingo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+    color: aliceblue;
+}
+
+.botonSiguiente{font-size: 20px !important; margin-top: 20px; padding: 20px; cursor: pointer;}
+.sectionListadoNumeros{display: flex;align-items: center;     margin: 20px 35px;}
+#listadoNumeros .numero {
+    display: inline-block;
+    background-color: rgba(123, 63, 179, 0.799);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    margin-left: 20px;
+}
+
+#carton .seleccionado {
+    background-color: rgb(193, 35, 35);
+    color: white;
+}
+
+.mostrarBoton{display: grid; justify-items: end; margin: 10px;}
+.mostrarBoton .botonSiguiente{display: grid; justify-items: end; margin: 10px;}
