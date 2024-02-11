@@ -49,9 +49,17 @@
       </div>
       <div id="carton"></div>
       <div class="mostrarBoton">
-        <boton class="boton botonSiguiente" onclick="pasarSiguienteJugador()"
-          >Siguiente Jugador</boton
-        >
+        <button class="boton botonSiguiente" id="botonSiguiente" onclick="pasarSiguienteJugador()">Siguiente Jugador</button>
+        <button id="ruleta" onclick="contador()">Número</button>
+        <button id="resultado" class="boton botonResultado d-none" onclick="mostrarResultado()">Mostrar Resultados</button>
+      </div>
+    </section>
+    <section id="partidaTerminada" class="d-none">
+      <h1 id="BINGO">Partida Terminada</h1>
+      <div id="mostrarResultado"></div>
+      <div id="mostrarbotonReiniciar">
+        <button class="boton BotonIniciar" id="BotonIniciar" onclick="reiniciarJuego()">Jugar de Nuevo</button>
+        <button class="boton" onclick="window.location.href = 'index.html'">Ver 👴🏻Ranking👵🏻</button>
       </div>
     </section>
   </body>

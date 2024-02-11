@@ -84,7 +84,7 @@ body {
     color: aliceblue;
     border-width: 5px;
     border-color: rgb(243, 245, 245);
-
+    margin: 20px;
 }
 
 
@@ -181,7 +181,9 @@ body {
 
 
 
-#ruleta {width: 70px;
+#ruleta {
+    cursor: pointer;
+    width: 70px;
     height: 70px;
     border-radius: 70%;
     color: aliceblue;
@@ -202,6 +204,11 @@ body {
 #carton .grid-row-bingo {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-row-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
   
 #carton .grid-row-3 {
@@ -282,7 +289,7 @@ body {
     color: aliceblue;
 }
 
-.botonSiguiente{font-size: 20px !important; margin-top: 20px; padding: 20px; cursor: pointer;}
+.botonSiguiente, .botonResultado{font-size: 20px !important; margin-top: 20px; padding: 20px; cursor: pointer;}
 .sectionListadoNumeros{display: flex;align-items: center;     margin: 20px 35px;}
 #listadoNumeros .numero {
     display: inline-block;
@@ -298,6 +305,7 @@ body {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 #carton .seleccionado {
@@ -307,3 +315,20 @@ body {
 
 .mostrarBoton{display: grid; justify-items: end; margin: 10px;}
 .mostrarBoton .botonSiguiente{display: grid; justify-items: end; margin: 10px;}
+.d-none{display: none !important;}
+.d-block{display:block;}
+button, a{cursor: pointer; text-decoration: none;}
+
+#BINGO_RESULTADO {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: x-large;
+    color: rgba(76, 37, 101, 0.986);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0%;
+}
+
+#mostrarResultado {display: flex; justify-content: center;}
+#mostrarResultado .grid{width: 200px; text-align: center; background: white;}
+#mostrarbotonReiniciar {display: flex; justify-content: center; margin:20px}
